@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+body {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 20px;
+  padding: 70px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+p{
+    text-align: justify;
+}
+.circle {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* Actually the code below is for the title and author*/
+  .header {
+    padding: 5px 5px 5px;
+    overflow: auto;
+  }
+
+  .Author {
+    display: inline-block;
+    vertical-align: middle;
+    width: 9%;
+  }
+  .header .Author p {
+    position: center;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .Article_Title {
+    display: inline-block;
+    width: 85%;
+    top: 50%; 
+    vertical-align:middle;
+  }
+  .header .Article_Title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+  }
+
+/* Code below is for the project options */
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 23%;
+    margin-bottom: 1px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 300px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width:88%;
+    height:100%;
+    transition:opacity 0.5s ease;
+  }
+  /* Change the size of text inside images in index */
+  .row .column .card .container h2{
+    font-size: 1.4vw;
+  }
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/* THE CODE HERE IS FOR THE FADE */
+
+span.text {
+    position: absolute;
+    bottom: 42%;
+    left: 19%;
+    font-size: 1.4vw;
+    color: white;
+}
+.column:hover .container{
+    opacity:1;
+    background: red;
+}
