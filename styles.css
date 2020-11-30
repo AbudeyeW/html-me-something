@@ -32,12 +32,13 @@ p{
 @media screen and (max-width: 992px) {
   p{
     text-align: justify;
-    font-size:3.4vw;
+    font-size:3.6vw;
 }
 }
 @media screen and (max-width: 600px) {
   p{
     text-align: justify;
+    font-size:4vw;
 }
 }
 .circle {
@@ -216,34 +217,45 @@ span.text {
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
+  /* Create three equal columns that sits next to each other */
   .column_1 {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    max-width: 30%;
+    max-width: 29%;
     padding: 0 4px;
+  }
+  .column_1_2 {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 35%;
+    padding: 0 0.9%;
   }
   
   .column_1 img {
-    margin-top: 8px;
+    margin-top: 7px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .column_1_2 img {
+    margin-top: 7px;
     vertical-align: middle;
     width: 100%;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     .column_1 {
       -ms-flex: 45%;
       flex: 45%;
       max-width: 50%;
     }
-  }
+  } */
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
+  /* @media screen and (max-width: 400px) {
     .column_1 {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
-  }
+  } */
