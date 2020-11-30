@@ -95,7 +95,7 @@ p{
       padding: 0px 8px;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     .column {
       width: 45%;
       display: block;
@@ -144,7 +144,7 @@ span.text {
     font-size: 1.4vw;
     color: white;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   span.text {
     position: absolute;
     bottom: 42%;
