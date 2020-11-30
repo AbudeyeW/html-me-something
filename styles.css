@@ -26,20 +26,21 @@ h1 {
   -webkit-font-smoothing: antialiased;
   text-align: center;
 }
+
 p{
     text-align: justify;
 }
 @media screen and (max-width: 992px) {
   p{
     text-align: justify;
-    font-size:3.6vw;
-}
+    font-size:3.1vw;
+  }
 }
 @media screen and (max-width: 600px) {
   p{
     text-align: justify;
     font-size:4vw;
-}
+  }
 }
 .circle {
     border-radius: 50%;
@@ -259,3 +260,65 @@ span.text {
       max-width: 100%;
     }
   } */
+
+    /* THE NEXT CODE IS FOR FLEXIBLE GRID - PROJECT 2 */
+
+    .row_2 {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create three equal columns that sits next to each other */
+    .column_2 {
+      -ms-flex: 30%; /* IE10 */
+      flex: 30%;
+      max-width: 29%;
+      padding: 0 4px;
+    }
+    .column_2_2 {
+      -ms-flex: 30%; /* IE10 */
+      flex: 30%;
+      max-width: 25%;
+      padding: 0 0.9%;
+    }
+    .column_2_3 {
+      -ms-flex: 30%; /* IE10 */
+      flex: 30%;
+      max-width: 40%;
+      padding: 0 0.9%;
+    }
+    
+    .column_2 img {
+      margin-top: 7px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    .column_2_2 img {
+      margin-top: 7px;
+      vertical-align: middle;
+      width: 100%;
+    }
+      @media screen and (max-width: 600px) {
+      .column_2 {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+      }
+      .column_2_2 {
+        -ms-flex: 45%;
+        flex: 45%;
+        max-width: 45%;
+        }
+    }
+
+    /* Now write the code for the code textbox */
+    #list{
+      background-color:rgba(129, 210, 241, 0.411);
+      color:rgb(196, 189, 189);
+      font-family:sans-serif;
+      padding:10px;
+    }
+  
