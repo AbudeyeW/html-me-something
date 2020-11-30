@@ -86,13 +86,24 @@ p{
   }
   
   /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 1000px) {
     .column {
-      width: 100%;
+      width: 21%;
       display: block;
+      margin-bottom: 1px;
+      /* Change padding to 0 8px to recover the previous style */
+      padding: 0px 8px;
     }
   }
-  
+  @media screen and (max-width: 700px) {
+    .column {
+      width: 45%;
+      display: block;
+      margin-bottom: 1px;
+      /* Change padding to 0 8px to recover the previous style */
+      padding: 0px 8px;
+    }
+  }
   /* Add some shadows to create a card effect */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -112,6 +123,7 @@ p{
     height:100%;
     transition:opacity 0.5s ease;
   }
+  
   /* Change the size of text inside images in index */
   .row .column .card .container h2{
     font-size: 1.4vw;
@@ -132,6 +144,15 @@ span.text {
     font-size: 1.4vw;
     color: white;
 }
+@media screen and (max-width: 700px) {
+  span.text {
+    position: absolute;
+    bottom: 42%;
+    left: 30%;
+    font-size: 1.4vw;
+    color: white;
+  }
+}
 .column:hover .container{
     opacity:1;
     background: rgb(63, 177, 230);
@@ -139,7 +160,7 @@ span.text {
 }
 
 
-  /* THE NEXT CODE IS FOR FLEXIBLE GRID PROJECT 1 */
+  /* THE NEXT CODE IS FOR FLEXIBLE GRID - PROJECT 1 */
 
   .row_1 {
     display: -ms-flexbox; /* IE10 */
