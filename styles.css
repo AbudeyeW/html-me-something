@@ -316,7 +316,7 @@ span.text {
 
     /* Now write the code for the code textbox */
     #list{
-      background-color:rgba(129, 210, 241, 0.411);
+      background-color:rgb(197, 204, 207);
       color:rgb(196, 189, 189);
       font-family:sans-serif;
       padding:10px;
