@@ -10,6 +10,7 @@ body {
   font-size: 20px;
   padding: 70px;
 }
+
 .center{
     text-align: center;
     vertical-align: center;
@@ -27,6 +28,17 @@ h1 {
 }
 p{
     text-align: justify;
+}
+@media screen and (max-width: 992px) {
+  p{
+    text-align: justify;
+    font-size:3.4vw;
+}
+}
+@media screen and (max-width: 600px) {
+  p{
+    text-align: justify;
+}
 }
 .circle {
     border-radius: 50%;
@@ -86,7 +98,7 @@ p{
   }
   
   /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 992px) {
     .column {
       width: 21%;
       display: block;
@@ -95,7 +107,7 @@ p{
       padding: 0px 8px;
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     .column {
       width: 45%;
       display: block;
@@ -123,7 +135,32 @@ p{
     height:100%;
     transition:opacity 0.5s ease;
   }
-  
+  @media screen and (max-width: 992px) {
+    .container {
+      padding: 0 16px;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      position: absolute;
+      top:0;
+      left:0;
+      width:78%;
+      height:100%;
+      transition:opacity 0.5s ease;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 0 16px;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      position: absolute;
+      top:0;
+      left:0;
+      width:84%;
+      height:100%;
+      transition:opacity 0.5s ease;
+    }
+  }
   /* Change the size of text inside images in index */
   .row .column .card .container h2{
     font-size: 1.4vw;
@@ -144,7 +181,17 @@ span.text {
     font-size: 1.4vw;
     color: white;
 }
-@media screen and (max-width: 800px) {
+/* Change screen px to 700  */
+@media screen and (max-width: 992px) {
+  span.text {
+    position: absolute;
+    bottom: 42%;
+    left: 25%;
+    font-size: 1.4vw;
+    color: white;
+  }
+}
+@media screen and (max-width: 600px) {
   span.text {
     position: absolute;
     bottom: 42%;
@@ -155,8 +202,7 @@ span.text {
 }
 .column:hover .container{
     opacity:1;
-    background: rgb(63, 177, 230);
-    
+    background: rgb(63, 177, 230);  
 }
 
 
